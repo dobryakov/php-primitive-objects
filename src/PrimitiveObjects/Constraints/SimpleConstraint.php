@@ -2,7 +2,8 @@
 
 namespace PrimitiveObjects\Constraints;
 
-class SimpleConstraint {
+class SimpleConstraint implements SimpleConstraintInterface
+{
 
     /**
      * Validate the value to match this constraint

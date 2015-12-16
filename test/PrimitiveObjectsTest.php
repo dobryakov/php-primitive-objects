@@ -6,6 +6,10 @@ use PrimitiveObjects\ArrayOfStringsPrimitive;
 
 class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 {
+
+    /**
+     * Test for strings
+     */
     public function testStringPrimitive() {
 
         $value = 'test!';
@@ -14,6 +18,9 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 
     }
 
+    /**
+     * Test for numeric
+     */
     public function testNumericPrimitive() {
 
         $value = 0.123;
@@ -42,6 +49,9 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 
     }
 
+    /**
+     * Test for array of strings (for example)
+     */
     public function testArrayOfStringsPrimitive() {
 
         $data = [ 'abc', 'def', 'ghi' ];

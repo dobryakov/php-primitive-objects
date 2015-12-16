@@ -7,7 +7,8 @@ use PrimitiveObjects\Constraints\SimpleConstraint; // CTRL + Space
 /**
  * Basic abstract primitive entity
  */
-class SimplePrimitive {
+class SimplePrimitive implements SimplePrimitiveInterface
+{
 
     protected $value;
     protected $constraints = [];
