@@ -9,8 +9,15 @@ class SimpleObject {
     protected $value;
     protected $constraints = [];
 
+    protected function init() {
+        // do some initialization
+    }
+
     public function __construct($value, $constraints = []) {
-        $this->constraints = $constraints;
+        $this->init();
+        foreach($constraints as $constraint) {
+            $this->constraints[] = $constraint;
+        }
         $this->setValue($value);
     }
 
