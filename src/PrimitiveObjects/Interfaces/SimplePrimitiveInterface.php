@@ -1,6 +1,6 @@
 <?php
 
-namespace PrimitiveObjects;
+namespace PrimitiveObjects\Interfaces;
 
 /**
  * Basic abstract primitive entity
