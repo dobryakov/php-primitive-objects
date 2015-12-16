@@ -1,7 +1,6 @@
 <?php
 
-namespace PrimitiveObjects;
-use PrimitiveObjects\Arrays\ArrayPrimitive;
+namespace PrimitiveObjects\Arrays;
 use PrimitiveObjects\Strings\StringPrimitive;
 
 /**

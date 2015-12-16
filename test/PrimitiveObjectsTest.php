@@ -2,8 +2,8 @@
 
 use PrimitiveObjects\Strings\StringPrimitive;
 use PrimitiveObjects\Numerics\NumericPrimitive;
-use PrimitiveObjects\ArrayOfStringsPrimitive;
 use PrimitiveObjects\Ranges\NumericRangePrimitive;
+use PrimitiveObjects\Arrays\ArrayOfStringsPrimitive;
 
 class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 {
