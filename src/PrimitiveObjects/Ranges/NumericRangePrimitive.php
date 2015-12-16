@@ -1,6 +1,7 @@
 <?php
 
 namespace PrimitiveObjects\Ranges;
+use PrimitiveObjects\Numerics\NumericPrimitive;
 
 /**
  * Numeric range primitive
@@ -40,7 +41,7 @@ class NumericRangePrimitive extends RangePrimitive
      * Return true if $needle is in range
      */
     public function inRange(NumericPrimitive $needle) {
-        return ( $this->left->getValue() >= $needle && $this->right->getValue() <= $needle );
+        return ( ($this->left->getValue() <= $needle->getValue()) && ($this->right->getValue() >= $needle->getValue()) );
     }
 
 } 

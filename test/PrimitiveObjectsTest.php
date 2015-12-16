@@ -3,6 +3,7 @@
 use PrimitiveObjects\Strings\StringPrimitive;
 use PrimitiveObjects\Numerics\NumericPrimitive;
 use PrimitiveObjects\ArrayOfStringsPrimitive;
+use PrimitiveObjects\Ranges\NumericRangePrimitive;
 
 class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 {
@@ -64,6 +65,17 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
     }
 
     public function testRangePrimitive() {
+
+        $left  = new NumericPrimitive(5);
+        $right = new NumericPrimitive(10);
+
+        $in_range  = new NumericPrimitive(7);
+        $out_range = new NumericPrimitive(17);
+
+        $obj   = new NumericRangePrimitive($left, $right);
+
+        $this->assertTrue($obj->inRange($in_range));
+        $this->assertFalse($obj->inRange($out_range));
 
     }
 

@@ -2,6 +2,9 @@
 
 namespace PrimitiveObjects\Ranges;
 
+use PrimitiveObjects\RangePrimitiveInterface;
+use PrimitiveObjects\SimplePrimitiveInterface;
+
 class RangePrimitive implements RangePrimitiveInterface
 {
 
