@@ -4,6 +4,9 @@ namespace PrimitiveObjects;
 
 use PrimitiveObjects\Constraints\SimpleConstraint; // CTRL + Space
 
+/**
+ * Basic abstract primitive entity
+ */
 class SimplePrimitive {
 
     protected $value;
@@ -19,12 +22,14 @@ class SimplePrimitive {
     /**
      * Constructor receives the value and constraints array
      */
-    public function __construct($value, $constraints = []) {
+    public function __construct($value = null, $constraints = []) {
         $this->init();
         foreach($constraints as $constraint) {
             $this->constraints[] = $constraint;
         }
-        $this->setValue($value);
+        if ($value !== null) {
+            $this->setValue($value);
+        }
     }
 
     /**

@@ -2,6 +2,7 @@
 
 use PrimitiveObjects\StringPrimitive;
 use PrimitiveObjects\NumericPrimitive;
+use PrimitiveObjects\StringsArrayPrimitive;
 
 class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 {
@@ -38,6 +39,17 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 
         $value = 'abc';
         new NumericPrimitive($value);
+
+    }
+
+    public function testStringsArrayPrimitive() {
+
+        $data = [ 'abc', 'def', 'ghi' ];
+        $obj  = new StringsArrayPrimitive();
+        foreach ($data as $s) {
+            $obj->push(new StringPrimitive($s));
+        }
+        $this->assertEquals($obj->count(), count($data));
 
     }
 
