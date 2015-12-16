@@ -4,7 +4,7 @@ namespace PrimitiveObjects;
 
 use PrimitiveObjects\Constraints\StringConstraint;
 
-class StringPrimitive extends SimpleObject {
+class StringPrimitive extends SimplePrimitive {
 
     protected function init() {
         $this->constraints = [ new StringConstraint() ];
