@@ -2,7 +2,7 @@
 
 namespace PrimitiveObjects;
 
-class StringsArrayPrimitive extends ArrayPrimitive {
+class ArrayOfStringsPrimitive extends ArrayPrimitive {
 
     /**
      * Add item to array with easy validation. Yahooo :)

@@ -2,7 +2,7 @@
 
 use PrimitiveObjects\StringPrimitive;
 use PrimitiveObjects\NumericPrimitive;
-use PrimitiveObjects\StringsArrayPrimitive;
+use PrimitiveObjects\ArrayOfStringsPrimitive;
 
 class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 {
@@ -42,10 +42,10 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 
     }
 
-    public function testStringsArrayPrimitive() {
+    public function testArrayOfStringsPrimitive() {
 
         $data = [ 'abc', 'def', 'ghi' ];
-        $obj  = new StringsArrayPrimitive();
+        $obj  = new ArrayOfStringsPrimitive();
         foreach ($data as $s) {
             $obj->push(new StringPrimitive($s));
         }
