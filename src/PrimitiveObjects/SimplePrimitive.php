@@ -20,7 +20,7 @@ class SimplePrimitive {
     }
 
     /**
-     * Constructor receives the value and constraints array
+     * Constructor receives the value, and array of constraints
      */
     public function __construct($value = null, $constraints = []) {
         $this->init();

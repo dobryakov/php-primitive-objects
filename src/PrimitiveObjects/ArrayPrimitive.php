@@ -4,6 +4,9 @@ namespace PrimitiveObjects;
 
 use PrimitiveObjects\Constraints\ArrayConstraint;
 
+/**
+ * Primitive array object
+ */
 class ArrayPrimitive extends SimplePrimitive {
 
     protected function init() {

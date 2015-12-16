@@ -2,6 +2,9 @@
 
 namespace PrimitiveObjects;
 
+/**
+ * Primitive array-of-string object (as example)
+ */
 class ArrayOfStringsPrimitive extends ArrayPrimitive {
 
     /**
@@ -11,4 +14,4 @@ class ArrayOfStringsPrimitive extends ArrayPrimitive {
         $this->value[] = $item;
     }
 
-} 
+}
