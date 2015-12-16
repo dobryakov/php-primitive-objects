@@ -4,5 +4,6 @@ require_once __DIR__ . '/vendor/autoload.php'; // Autoload files using Composer 
 
 use PrimitiveObjects\SimpleObject;
 
-new SimpleObject('test!');
+$o = new SimpleObject('test!');
 
+echo $o->getValue();
