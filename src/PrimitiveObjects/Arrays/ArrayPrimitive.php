@@ -1,8 +1,8 @@
 <?php
 
-namespace PrimitiveObjects;
-
+namespace PrimitiveObjects\Arrays;
 use PrimitiveObjects\Constraints\ArrayConstraint;
+use PrimitiveObjects\SimplePrimitive;
 
 /**
  * Primitive array object
@@ -41,4 +41,4 @@ class ArrayPrimitive extends SimplePrimitive {
         return count($this->value);
     }
 
-} 
+}
