@@ -6,7 +6,8 @@ Bring a bit of "true OOP" to your PHP code by using primitives (strings, numbers
 Inspired by
 -----------
 
-    "Most of the problems in software engineering occurs by the reason of variables get incorrect values somewhere in your code" (c) Erlang authors.
+    "Most of the problems in software engineering occurs by the reason of
+    variables get incorrect values somewhere in your code" (c) Erlang authors.
 
 Why?
 ----
