@@ -1,7 +1,7 @@
 <?php
 
-use PrimitiveObjects\StringPrimitive;
-use PrimitiveObjects\NumericPrimitive;
+use PrimitiveObjects\Strings\StringPrimitive;
+use PrimitiveObjects\Numerics\NumericPrimitive;
 use PrimitiveObjects\ArrayOfStringsPrimitive;
 
 class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
@@ -60,6 +60,10 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
             $obj->push(new StringPrimitive($s));
         }
         $this->assertEquals($obj->count(), count($data));
+
+    }
+
+    public function testRangePrimitive() {
 
     }
 

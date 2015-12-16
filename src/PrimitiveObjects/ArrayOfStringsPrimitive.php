@@ -1,6 +1,7 @@
 <?php
 
 namespace PrimitiveObjects;
+use PrimitiveObjects\Strings\StringPrimitive;
 
 /**
  * Primitive array-of-string object (as example)

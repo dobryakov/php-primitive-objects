@@ -2,7 +2,8 @@
 
 namespace PrimitiveObjects;
 
-use PrimitiveObjects\Constraints\SimpleConstraint; // CTRL + Space
+use PrimitiveObjects\Constraints\SimpleConstraint;
+use PrimitiveObjects\Constraints\SimpleConstraintInterface; // CTRL + Space
 
 /**
  * Basic abstract primitive entity
@@ -26,11 +27,18 @@ class SimplePrimitive implements SimplePrimitiveInterface
     public function __construct($value = null, $constraints = []) {
         $this->init();
         foreach($constraints as $constraint) {
-            $this->constraints[] = $constraint;
+            $this->addConstraint($constraint);
         }
         if ($value !== null) {
             $this->setValue($value);
         }
+    }
+
+    /**
+     * Add constraint to this object
+     */
+    public function addConstraint(SimpleConstraintInterface $constraint) {
+        $this->constraints[] = $constraint;
     }
 
     /**

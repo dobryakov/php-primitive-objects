@@ -1,8 +1,9 @@
 <?php
 
-namespace PrimitiveObjects;
+namespace PrimitiveObjects\Strings;
 
 use PrimitiveObjects\Constraints\StringConstraint;
+use PrimitiveObjects\SimplePrimitive;
 
 /**
  * Primitive string object
@@ -10,7 +11,7 @@ use PrimitiveObjects\Constraints\StringConstraint;
 class StringPrimitive extends SimplePrimitive {
 
     protected function init() {
-        $this->constraints = [ new StringConstraint() ];
+        $this->addConstraint(new StringConstraint());
     }
 
 }

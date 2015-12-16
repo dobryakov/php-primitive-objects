@@ -1,8 +1,9 @@
 <?php
 
-namespace PrimitiveObjects;
+namespace PrimitiveObjects\Numerics;
 
 use PrimitiveObjects\Constraints\NumericConstraint;
+use PrimitiveObjects\SimplePrimitive;
 
 /**
  * Primitive numeric object
@@ -10,7 +11,7 @@ use PrimitiveObjects\Constraints\NumericConstraint;
 class NumericPrimitive extends SimplePrimitive {
 
     protected function init() {
-        $this->constraints = [ new NumericConstraint() ];
+        $this->addConstraint(new NumericConstraint());
     }
 
 }
