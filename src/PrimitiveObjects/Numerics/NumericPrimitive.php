@@ -3,8 +3,8 @@
 namespace PrimitiveObjects\Numerics;
 
 use PrimitiveObjects\Constraints\NumericConstraint;
+use PrimitiveObjects\Interfaces\SimplePrimitiveInterface;
 use PrimitiveObjects\SimplePrimitive;
-use PrimitiveObjects\SimplePrimitiveInterface;
 
 /**
  * Primitive numeric object

@@ -3,7 +3,7 @@
 namespace PrimitiveObjects\Constraints;
 
 use PrimitiveObjects\Exceptions\ConstraintException;
-use PrimitiveObjects\NumericPrimitive;
+use PrimitiveObjects\Numerics\NumericPrimitive;
 
 /**
  * Minimal value constraint

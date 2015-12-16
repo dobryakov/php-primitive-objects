@@ -3,7 +3,8 @@
 namespace PrimitiveObjects;
 
 use PrimitiveObjects\Constraints\SimpleConstraint;
-use PrimitiveObjects\Constraints\SimpleConstraintInterface; // CTRL + Space
+use PrimitiveObjects\Constraints\SimpleConstraintInterface;
+use PrimitiveObjects\Interfaces\SimplePrimitiveInterface; // CTRL + Space
 
 /**
  * Basic abstract primitive entity
