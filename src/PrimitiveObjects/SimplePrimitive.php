@@ -2,6 +2,7 @@
 
 namespace Grido\PrimitiveObjects;
 
+use Grido\PrimitiveObjects\Callbacks\SimpleCallbackInterface;
 use Grido\PrimitiveObjects\Constraints\SimpleConstraint;
 use Grido\PrimitiveObjects\Constraints\SimpleConstraintInterface;
 use Grido\PrimitiveObjects\Interfaces\SimplePrimitiveInterface; // CTRL + Space
@@ -14,6 +15,7 @@ abstract class SimplePrimitive implements SimplePrimitiveInterface
 
     protected $value;
     protected $constraints = [];
+    protected $callbacks   = [];
 
     /**
      * Do some initialization in children classes
@@ -43,6 +45,17 @@ abstract class SimplePrimitive implements SimplePrimitiveInterface
     }
 
     /**
+     * Add callback to this object
+     */
+    public function addCallback(SimpleCallbackInterface $callback) {
+        $this->callbacks[$callback->getName()] = $callback;
+    }
+
+    public function getCallback($name) {
+        return $this->callbacks[$name];
+    }
+
+    /**
      * Validate the value through constraints before saving
      */
     protected function validate($value) {
@@ -58,6 +71,10 @@ abstract class SimplePrimitive implements SimplePrimitiveInterface
     public function setValue($value) {
         $this->validate($value);
         $this->value = $value;
+        foreach($this->callbacks as $callback) {
+            /** @var $callback SimpleCallbackInterface */
+            $callback->act($value);
+        }
     }
 
     /**

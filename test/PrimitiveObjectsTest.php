@@ -4,6 +4,7 @@ use Grido\PrimitiveObjects\Numerics\NumericPrimitive;
 use Grido\PrimitiveObjects\Ranges\NumericRangePrimitive;
 use Grido\PrimitiveObjects\Arrays\ArrayOfStringsPrimitive;
 use Grido\PrimitiveObjects\Strings\StringPrimitive;
+use Grido\PrimitiveObjects\Callbacks\HistoryCallback;
 
 class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 {
@@ -64,6 +65,9 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 
     }
 
+    /**
+     * Test for Range Primitive
+     */
     public function testRangePrimitive() {
 
         $left  = new NumericPrimitive(5);
@@ -79,6 +83,9 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 
     }
 
+    /**
+     * Use Array Primitive as usual array
+     */
     public function testArrayAccess() {
 
         $data = [ 'abc', 'def', 'ghi' ];
@@ -107,6 +114,19 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
         }
         $this->assertEquals($data, $result);
 
+    }
+
+    /**
+     * Get history of value changes
+     */
+    public function testHistoryCallback() {
+        $data = [ 'abc', 'def', 'ghi' ];
+        $obj  = new StringPrimitive();
+        $obj->addCallback(new HistoryCallback());
+        foreach($data as $word) {
+            $obj->setValue($word);
+        }
+        $this->assertEquals($data, $obj->getCallback('HistoryCallback')->getHistory());
     }
 
 }
