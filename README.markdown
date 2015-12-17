@@ -3,6 +3,8 @@ About
 
 Bring a bit of "true OOP" to your PHP code by using primitives (strings, numbers, arrays) as a first-class objects :)
 
+[![Build Status](https://travis-ci.org/dobryakov/php-primitive-objects.svg)](https://travis-ci.org/dobryakov/php-primitive-objects)
+
 Inspired by
 -----------
 
