@@ -14,7 +14,7 @@ class RangePrimitive implements RangePrimitiveInterface
     /**
      * Constructor receives the left value and right value for range
      */
-    public function __construct(SimplePrimitiveInterface $left, SimplePrimitiveInterface $right) {
+    public function __construct($left, $right) {
         $this->setRange($left, $right);
     }
 

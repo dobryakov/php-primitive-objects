@@ -2,6 +2,7 @@
 
 namespace Grido\PrimitiveObjects\Arrays;
 use Grido\PrimitiveObjects\Constraints\ArrayConstraint;
+use Grido\PrimitiveObjects\Interfaces\SimplePrimitiveInterface;
 use Grido\PrimitiveObjects\SimplePrimitive;
 
 /**
@@ -16,7 +17,7 @@ class ArrayPrimitive extends SimplePrimitive implements \Iterator {
     /**
      * Add item to internal array
      */
-    public function push($item) {
+    public function push(SimplePrimitiveInterface $item) {
         $this->value[] = $item;
     }
 

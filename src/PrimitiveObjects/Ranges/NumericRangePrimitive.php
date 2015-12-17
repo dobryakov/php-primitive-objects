@@ -16,13 +16,6 @@ class NumericRangePrimitive extends RangePrimitive
     protected $right;
 
     /**
-     * Constructor receives the left value and right value for range
-     */
-    public function __construct(NumericPrimitive $left, NumericPrimitive $right) {
-        $this->setRange($left, $right);
-    }
-
-    /**
      * Set range as left and right values
      */
     public function setRange(NumericPrimitive $left, NumericPrimitive $right) {
