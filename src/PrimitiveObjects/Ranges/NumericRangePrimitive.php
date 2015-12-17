@@ -1,7 +1,8 @@
 <?php
 
 namespace Grido\PrimitiveObjects\Ranges;
-use Grido\PrimitiveObjects\Numerics\NumericPrimitive;
+
+use Grido\PrimitiveObjects\Interfaces\NumericPrimitiveInterface;
 
 /**
  * Numeric range primitive
@@ -18,7 +19,7 @@ class NumericRangePrimitive extends RangePrimitive
     /**
      * Set range as left and right values
      */
-    public function setRange(NumericPrimitive $left, NumericPrimitive $right) {
+    public function setRange(NumericPrimitiveInterface $left, NumericPrimitiveInterface $right) {
         $this->left  = $left;
         $this->right = $right;
     }
@@ -33,7 +34,7 @@ class NumericRangePrimitive extends RangePrimitive
     /**
      * Return true if $needle is in range
      */
-    public function inRange(NumericPrimitive $needle) {
+    public function inRange(NumericPrimitiveInterface $needle) {
         return ( ($this->left->getValue() <= $needle->getValue()) && ($this->right->getValue() >= $needle->getValue()) );
     }
 
