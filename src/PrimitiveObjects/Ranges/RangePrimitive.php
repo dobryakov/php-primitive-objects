@@ -2,12 +2,16 @@
 
 namespace Grido\PrimitiveObjects\Ranges;
 
+use Grido\PrimitiveObjects\Interfaces\NumericPrimitiveInterface;
 use Grido\PrimitiveObjects\Interfaces\RangePrimitiveInterface;
 
 abstract class RangePrimitive implements RangePrimitiveInterface
 {
 
+    /** @var  $left  NumericPrimitiveInterface */
     protected $left;
+
+    /** @var  $right NumericPrimitiveInterface */
     protected $right;
 
     /**
@@ -17,7 +21,7 @@ abstract class RangePrimitive implements RangePrimitiveInterface
         $this->setRange($left, $right);
     }
 
-    protected function setRange($left, $right) {
+    protected function setRange(NumericPrimitiveInterface $left, NumericPrimitiveInterface $right) {
         $this->left  = $left;
         $this->right = $right;
     }
