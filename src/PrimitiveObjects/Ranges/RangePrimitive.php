@@ -18,7 +18,7 @@ abstract class RangePrimitive implements RangePrimitiveInterface
         $this->setRange($left, $right);
     }
 
-    protected function setRange($left, $right) {
+    protected function setRange(SimplePrimitiveInterface $left, SimplePrimitiveInterface $right) {
         $this->left  = $left;
         $this->right = $right;
     }

@@ -2,7 +2,6 @@
 
 namespace Grido\PrimitiveObjects\Arrays;
 use Grido\PrimitiveObjects\Constraints\ArrayConstraint;
-use Grido\PrimitiveObjects\Interfaces\SimplePrimitiveInterface;
 use Grido\PrimitiveObjects\SimplePrimitive;
 
 /**
