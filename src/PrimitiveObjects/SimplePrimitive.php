@@ -9,7 +9,7 @@ use PrimitiveObjects\Interfaces\SimplePrimitiveInterface; // CTRL + Space
 /**
  * Basic abstract primitive entity
  */
-class SimplePrimitive implements SimplePrimitiveInterface
+abstract class SimplePrimitive implements SimplePrimitiveInterface
 {
 
     protected $value;
