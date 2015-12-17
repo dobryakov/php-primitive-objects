@@ -1,6 +1,6 @@
 <?php
 
-namespace PrimitiveObjects\Interfaces;
+namespace Grido\PrimitiveObjects\Interfaces;
 
 /**
  * Basic abstract primitive entity

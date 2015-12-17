@@ -1,8 +1,8 @@
 <?php
 
-namespace PrimitiveObjects\Arrays;
-use PrimitiveObjects\Constraints\ArrayConstraint;
-use PrimitiveObjects\SimplePrimitive;
+namespace Grido\PrimitiveObjects\Arrays;
+use Grido\PrimitiveObjects\Constraints\ArrayConstraint;
+use Grido\PrimitiveObjects\SimplePrimitive;
 
 /**
  * Primitive array object

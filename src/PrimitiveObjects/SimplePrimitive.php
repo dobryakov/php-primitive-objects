@@ -1,10 +1,10 @@
 <?php
 
-namespace PrimitiveObjects;
+namespace Grido\PrimitiveObjects;
 
-use PrimitiveObjects\Constraints\SimpleConstraint;
-use PrimitiveObjects\Constraints\SimpleConstraintInterface;
-use PrimitiveObjects\Interfaces\SimplePrimitiveInterface; // CTRL + Space
+use Grido\PrimitiveObjects\Constraints\SimpleConstraint;
+use Grido\PrimitiveObjects\Constraints\SimpleConstraintInterface;
+use Grido\PrimitiveObjects\Interfaces\SimplePrimitiveInterface; // CTRL + Space
 
 /**
  * Basic abstract primitive entity

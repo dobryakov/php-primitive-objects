@@ -1,8 +1,8 @@
 <?php
 
-namespace PrimitiveObjects\Constraints;
+namespace Grido\PrimitiveObjects\Constraints;
 
-use PrimitiveObjects\Exceptions\ConstraintException;
+use Grido\PrimitiveObjects\Exceptions\ConstraintException;
 
 class ArrayConstraint extends SimpleConstraint {
 

@@ -1,7 +1,7 @@
 <?php
 
-namespace PrimitiveObjects\Ranges;
-use PrimitiveObjects\Numerics\NumericPrimitive;
+namespace Grido\PrimitiveObjects\Ranges;
+use Grido\PrimitiveObjects\Numerics\NumericPrimitive;
 
 /**
  * Numeric range primitive

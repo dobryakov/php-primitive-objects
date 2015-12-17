@@ -1,9 +1,9 @@
 <?php
 
-use PrimitiveObjects\Strings\StringPrimitive;
-use PrimitiveObjects\Numerics\NumericPrimitive;
-use PrimitiveObjects\Ranges\NumericRangePrimitive;
-use PrimitiveObjects\Arrays\ArrayOfStringsPrimitive;
+use Grido\PrimitiveObjects\Numerics\NumericPrimitive;
+use Grido\PrimitiveObjects\Ranges\NumericRangePrimitive;
+use Grido\PrimitiveObjects\Arrays\ArrayOfStringsPrimitive;
+use Grido\PrimitiveObjects\Strings\StringPrimitive;
 
 class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 {
@@ -31,7 +31,7 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException PrimitiveObjects\Exceptions\ConstraintException
+     * @expectedException Grido\PrimitiveObjects\Exceptions\ConstraintException
      */
     public function testStringException() {
 
@@ -41,7 +41,7 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException PrimitiveObjects\Exceptions\ConstraintException
+     * @expectedException Grido\PrimitiveObjects\Exceptions\ConstraintException
      */
     public function testNumericException() {
 

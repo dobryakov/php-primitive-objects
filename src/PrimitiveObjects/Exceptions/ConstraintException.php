@@ -1,6 +1,6 @@
 <?php
 
-namespace PrimitiveObjects\Exceptions;
+namespace Grido\PrimitiveObjects\Exceptions;
 
 /**
  * Default exception for constraints validations

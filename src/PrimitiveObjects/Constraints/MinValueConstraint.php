@@ -1,9 +1,9 @@
 <?php
 
-namespace PrimitiveObjects\Constraints;
+namespace Grido\PrimitiveObjects\Constraints;
 
-use PrimitiveObjects\Exceptions\ConstraintException;
-use PrimitiveObjects\Numerics\NumericPrimitive;
+use Grido\PrimitiveObjects\Exceptions\ConstraintException;
+use Grido\PrimitiveObjects\Numerics\NumericPrimitive;
 
 /**
  * Minimal value constraint

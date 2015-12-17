@@ -1,6 +1,6 @@
 <?php
 
-namespace PrimitiveObjects\Constraints;
+namespace Grido\PrimitiveObjects\Constraints;
 
 interface SimpleConstraintInterface
 {

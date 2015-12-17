@@ -1,9 +1,9 @@
 <?php
 
-namespace PrimitiveObjects\Strings;
+namespace Grido\PrimitiveObjects\Strings;
 
-use PrimitiveObjects\Constraints\StringConstraint;
-use PrimitiveObjects\SimplePrimitive;
+use Grido\PrimitiveObjects\Constraints\StringConstraint;
+use Grido\PrimitiveObjects\SimplePrimitive;
 
 /**
  * Primitive string object

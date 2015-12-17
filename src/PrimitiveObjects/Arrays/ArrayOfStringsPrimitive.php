@@ -1,7 +1,7 @@
 <?php
 
-namespace PrimitiveObjects\Arrays;
-use PrimitiveObjects\Strings\StringPrimitive;
+namespace Grido\PrimitiveObjects\Arrays;
+use Grido\PrimitiveObjects\Strings\StringPrimitive;
 
 /**
  * Primitive array-of-string object (as example)

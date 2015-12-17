@@ -1,9 +1,9 @@
 <?php
 
-namespace PrimitiveObjects\Ranges;
+namespace Grido\PrimitiveObjects\Ranges;
 
-use PrimitiveObjects\Interfaces\RangePrimitiveInterface;
-use PrimitiveObjects\Interfaces\SimplePrimitiveInterface;
+use Grido\PrimitiveObjects\Interfaces\RangePrimitiveInterface;
+use Grido\PrimitiveObjects\Interfaces\SimplePrimitiveInterface;
 
 class RangePrimitive implements RangePrimitiveInterface
 {

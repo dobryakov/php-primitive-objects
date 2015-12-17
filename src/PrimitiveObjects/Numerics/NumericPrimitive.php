@@ -1,10 +1,10 @@
 <?php
 
-namespace PrimitiveObjects\Numerics;
+namespace Grido\PrimitiveObjects\Numerics;
 
-use PrimitiveObjects\Constraints\NumericConstraint;
-use PrimitiveObjects\Interfaces\SimplePrimitiveInterface;
-use PrimitiveObjects\SimplePrimitive;
+use Grido\PrimitiveObjects\Constraints\NumericConstraint;
+use Grido\PrimitiveObjects\Interfaces\SimplePrimitiveInterface;
+use Grido\PrimitiveObjects\SimplePrimitive;
 
 /**
  * Primitive numeric object
