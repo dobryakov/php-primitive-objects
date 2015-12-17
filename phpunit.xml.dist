@@ -1,0 +1,14 @@
+<!-- phpunit.xml.dist -->
+<phpunit
+        colors="true"
+>
+    <testsuites>
+        <testsuite name="ExcelBundle Test Suite">
+            <directory>./test</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+
+    </php>
+</phpunit>
