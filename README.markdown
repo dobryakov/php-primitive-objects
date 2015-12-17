@@ -11,13 +11,14 @@ Inspired by
 Why?
 ----
 
-1. When you assigned some value to $x somewhere, you always need to check it in several places where $x can be used (in other functions and even other files too).
-And in case of problems you need to trace your code and find *there* your $x got incorrect value.
+When you assigned some value to $x somewhere, you always need to check it in several places where $x can be used (in other functions and even other files too).
+And in case of problems you need to trace your code and find *where* your $x got incorrect value.
 I think it is much better to be *sure* that you always have a *valid* value inside your $x, anywhere, at any moment, in any line of your code.
 
     Simple rule: if you have a variable - it contains a valid value.
+    Always.
 
-2. When you are expecting several "primitive types" as an arguments to your function, you always need to validate its inside.
+When you are expecting several "primitive types" as an arguments to your function, you always need to validate its inside.
 This is an unefficient way which provides a lot of unusable code.
 It's much better to validate and operate with them by convention-like principle bringed by true functional languages:
 
