@@ -5,7 +5,7 @@ namespace Grido\PrimitiveObjects\Ranges;
 use Grido\PrimitiveObjects\Interfaces\RangePrimitiveInterface;
 use Grido\PrimitiveObjects\Interfaces\SimplePrimitiveInterface;
 
-class RangePrimitive implements RangePrimitiveInterface
+abstract class RangePrimitive implements RangePrimitiveInterface
 {
 
     protected $left;
@@ -18,7 +18,7 @@ class RangePrimitive implements RangePrimitiveInterface
         $this->setRange($left, $right);
     }
 
-    protected function setRange(SimplePrimitiveInterface $left, SimplePrimitiveInterface $right) {
+    protected function setRange($left, $right) {
         $this->left  = $left;
         $this->right = $right;
     }

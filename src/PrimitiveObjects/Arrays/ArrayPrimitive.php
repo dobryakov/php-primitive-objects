@@ -8,17 +8,10 @@ use Grido\PrimitiveObjects\SimplePrimitive;
 /**
  * Primitive array object
  */
-class ArrayPrimitive extends SimplePrimitive implements \Iterator {
+abstract class ArrayPrimitive extends SimplePrimitive implements \Iterator {
 
     protected function init() {
         $this->addConstraint(new ArrayConstraint());
-    }
-
-    /**
-     * Add item to internal array
-     */
-    public function push(SimplePrimitiveInterface $item) {
-        $this->value[] = $item;
     }
 
     /**
