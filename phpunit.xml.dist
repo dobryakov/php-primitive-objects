@@ -1,5 +1,6 @@
 <!-- phpunit.xml.dist -->
 <phpunit
+        bootstrap="./vendor/autoload.php"
         colors="true"
 >
     <testsuites>
