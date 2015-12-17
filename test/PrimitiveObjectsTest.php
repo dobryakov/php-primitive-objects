@@ -79,5 +79,35 @@ class PrimitiveObjectsTest extends PHPUnit_Framework_TestCase
 
     }
 
+    public function testArrayAccess() {
+
+        $data = [ 'abc', 'def', 'ghi' ];
+        $obj  = new ArrayOfStringsPrimitive();
+        foreach ($data as $s) {
+            $obj->push(new StringPrimitive($s));
+        }
+
+        $this->assertEquals($obj->reset()->getValue(), reset($data));
+
+        // foreach
+
+        $result = [];
+        foreach($obj as $item) {
+            $result[] = $item->getValue();
+        }
+        $this->assertEquals($data, $result);
+
+        // almost-true functional style of iteration
+
+        $obj->reset();
+        $result = [];
+        while ($obj->current() != null) {
+            $result[] = $obj->current()->getValue();
+            $obj->next();
+        }
+        $this->assertEquals($data, $result);
+
+    }
+
 }
 

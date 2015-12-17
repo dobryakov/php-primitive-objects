@@ -7,7 +7,7 @@ use Grido\PrimitiveObjects\SimplePrimitive;
 /**
  * Primitive array object
  */
-class ArrayPrimitive extends SimplePrimitive {
+class ArrayPrimitive extends SimplePrimitive implements \Iterator {
 
     protected function init() {
         $this->addConstraint(new ArrayConstraint());
@@ -18,6 +18,27 @@ class ArrayPrimitive extends SimplePrimitive {
      */
     public function push($item) {
         $this->value[] = $item;
+    }
+
+    /**
+     * Next item from internal array (for iterators)
+     */
+    public function current() {
+        return current($this->value);
+    }
+
+    /**
+     * Current key from internal array (for iterators)
+     */
+    public function key() {
+        return key($this->value);
+    }
+
+    /**
+     * Rewind internal array (for iterators)
+     */
+    public function rewind() {
+        return $this->reset();
     }
 
     /**
@@ -39,6 +60,13 @@ class ArrayPrimitive extends SimplePrimitive {
      */
     public function count() {
         return count($this->value);
+    }
+
+    /**
+     * See Iterator interface
+     */
+    function valid(){
+        return array_key_exists($this->key(), $this->value);
     }
 
 }
