@@ -16,7 +16,7 @@ before_install:
   - composer self-update
 
 install:
-  - composer install --optimize-autoloader --prefer-source
+  - composer install
 
 script:
   - bin/phpunit --verbose
