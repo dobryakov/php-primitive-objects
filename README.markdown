@@ -70,9 +70,18 @@ You can construct your own "types" of objects by combining different constraints
 * and begins with capitalized letter,
 * and so on :)
 
+Caveats
+-------
+
+This approach always will be slower than real primitives in highload calculations.
+
+License
+-------
+
+General Public License.
+
 TODO
 ----
 
-* Values audit (history of changes for each object).
-
+* Any suggestions?
 
