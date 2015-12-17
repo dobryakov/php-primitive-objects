@@ -13,8 +13,8 @@ before_install:
   - composer self-update
 
 install:
-  - composer update
+  - composer install
 
 script:
-  - bin/phpunit --verbose
+  - phpunit --verbose
 
